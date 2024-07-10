@@ -2,13 +2,14 @@ h1 a, h2 a {
     color: #C25100;
 }
 
-body {
+body, html {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    margin: 0;
+    height:100%;
 }
 
-.container {
+main {
     flex: 1;
     width: 100%;
     padding-right: 15px;
@@ -19,17 +20,29 @@ body {
 
 .card {
     margin: 15px;
+    flex: 1 1 calc(33.333% - 30px); /* Adjusts the width and spacing of the cards */
+    box-sizing: border-box;
+}
+
+.blog-posts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-detail {
+    padding-top: 50px;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
 }
+.date {
+   color: #0e1921;
+   font-style: italic;
+}
+
 footer {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     background-color: #100b18;
     padding: 10px;
-
-
+}
