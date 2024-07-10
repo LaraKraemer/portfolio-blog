@@ -5,11 +5,11 @@ h1 a, h2 a {
 body, html {
     display: flex;
     flex-direction: column;
-    margin: 0;
     height:100%;
+    margin: 0;
 }
 
-main {
+.container {
     flex: 1;
     width: 100%;
     padding-right: 15px;
@@ -40,9 +40,8 @@ main {
 }
 
 footer {
-    display: flex;
-    align-items: flex-end;
     justify-content: center;
     background-color: #100b18;
     padding: 10px;
+    width: 100%;
 }
