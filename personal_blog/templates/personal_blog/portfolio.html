@@ -5,9 +5,9 @@
     <div class="row justify-content-center text-black text-left">
                     <div class="col-12">
                         <p class="fs-7 fw-bolder">Hi 👋 my name is</p>
-                        <h1 class="display-1">LaRa KräMer</h1>
+                        <h1 class="display-1">Lara Krämer</h1>
                         <h1 class="fw-lighter">I am learning to cook up digital magic for the web.</h1>
-                        <p class="text-muted fw-light font-monospace">
+                            <p class="text-muted fw-light font-monospace">
                             I am a former people manager and tech recruiter
                             who switched careers to become a software engineer.
                             My interest in software engineering began while working as a tech
@@ -19,9 +19,17 @@
                             an IOT project. I am building a sourdough starter spy with an ESP32 and
                             some funky sensors in MicroPython. Check out my repo. I love geeking out
                               about my code and getting my hands dirty.
-                        </p>
-                        <a href="https://github.com/LaraKraemer" role="button" class="btn btn-outline-primary">Check out my repos!</a>
-                         </div>
+                             </p>
+                        <div>
+                            <a href="https://github.com/LaraKraemer" role="button" class="btn btn-outline-secondary btn-sm mr-1">Github repos 👀</a>
+                            <a href="{% url 'post_list' %}" role="button" class="btn btn-outline-secondary btn-sm m-2">Tech tales ✍️</a>
+                        </div>
                     </div>
+        </div>
+            <p align="center">
+                <img class="images" src="https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&section=footer">
+            </p>
     </div>
 {% endblock %}
+
+
