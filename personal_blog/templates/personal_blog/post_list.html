@@ -1,7 +1,7 @@
 {% extends 'personal_blog/base.html' %}
 
 {% block content %}
- <h2 class="my-4">Recent Posts</h2>
+ <h2 class="my-3 p-4 fw-lighter">Recent Posts</h2>
         <div class="row">
             <div class="blog-posts">
                 {% for post in posts %}
@@ -10,9 +10,9 @@
                                 <time class="date">
                                     {{ post.published_date }}
                                 </time>
-                                <h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
-                                <p class="card-text">{{ post.text|linebreaksbr|truncatewords:30 }}</p>
-                                <a href="#" class="btn btn-primary">Read More</a>
+                                <h3 class="display-6"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
+                                <p class="card-text fw-lighter text-black">{{ post.text|linebreaksbr|truncatewords:30 }}</p>
+                                <a href="{% url 'post_detail' pk=post.pk %}" class=" btn btn-outline-secondary btn-sm">Read More</a>
                          </div>
                     </div>
                 {% endfor %}

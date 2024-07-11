@@ -1,15 +1,15 @@
 {% extends 'personal_blog/base.html' %}
 
 {% block content %}
-    <article class="post">
+    <article class="post row justify-content-left text-black text-left my-4">
         <div class="post-detail">
             {% if post.published_date %}
-                <time class="date">
+                <time class="date bg-light text-black rounded px-3 py-1 mb-4">
                     {{ post.published_date }}
                 </time>
             {% endif %}
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <h2 class="fs-7 fw-bolder mt-4">{{ post.title }}</h2>
+            <p class="fw-lighter">{{ post.text|linebreaksbr }}</p>
         </div>
     </article>
 {% endblock %}
