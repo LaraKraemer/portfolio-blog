@@ -1,4 +1,4 @@
-# My simplistic landing page and blog
+# A simplistic landing page and blog
 
 Adpated from the [Django Girls Tutorial](https://tutorial.djangogirls.org/en/). 
 After following the instructions again, I continued by adding a landing page.
