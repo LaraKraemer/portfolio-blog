@@ -11,7 +11,7 @@
                                     {{ post.published_date }}
                                 </time>
                                 <h3 class="display-6"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
-                                <p class="card-text fw-lighter text-black">{{ post.text|linebreaksbr|truncatewords:30 }}</p>
+                                <p class="card-text fw-lighter text-black">{{ post.content|safe|linebreaksbr|truncatewords:30 }}</p>
                                 <a href="{% url 'post_detail' pk=post.pk %}" class=" btn btn-outline-secondary btn-sm">Read More</a>
                          </div>
                     </div>

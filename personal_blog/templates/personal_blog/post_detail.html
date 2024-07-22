@@ -16,7 +16,7 @@
                 </time>
             {% endif %}
             <h2 class="fs-7 fw-bolder mt-4">{{ post.title }}</h2>
-            <p class="fw-lighter">{{ post.text|linebreaksbr }}</p>
+            <p class="fw-lighter">{{ post.content|safe|linebreaksbr }}</p>
         </div>
     </article>
 {% endblock %}
