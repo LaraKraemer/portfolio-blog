@@ -1,7 +1,7 @@
 {% extends 'personal_blog/base.html' %}
 
 {% block content %}
-    <article class="post row justify-content-left text-black text-left my-4">
+    <div class="post row justify-content-left text-black text-left my-4">
         <div class="post-detail">
             <aside class="actions">
                 {% if user.is_authenticated %}
@@ -17,6 +17,7 @@
             {% endif %}
             <h2 class="fs-7 fw-bolder mt-4">{{ post.title }}</h2>
             <p class="fw-lighter">{{ post.content|safe|linebreaksbr }}</p>
+            <a href="{% url 'post_list' %}" role="button" class="btn btn-outline-secondary btn-sm m-2">Return️</a>
         </div>
-    </article>
+    </div>
 {% endblock %}
