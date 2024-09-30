@@ -41,6 +41,12 @@ body, html {
     padding-right: 15px;
     padding-left: 15px;
 }
+
+.post-detail img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
 .date {
    color: #0e1921;
    font-style: italic;
