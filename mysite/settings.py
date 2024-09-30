@@ -134,3 +134,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SUMMERNOTE_CONFIG = {
+    'iframe': True,  # You can use an iframe, this helps with CSS isolation
+    'summernote': {
+        'width': '100%',
+        'height': '400',
+    },
+    'disable_attachment': False,  # Allow attachments like images
+    'attachment_filesize_limit': 5242880,  # Set a reasonable size limit for images (5MB in this case)
+    'attachment_model': 'django_summernote.Attachment',  # Make sure you are using the default attachment model
+}
