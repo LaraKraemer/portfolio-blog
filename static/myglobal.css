@@ -43,7 +43,7 @@ body, html {
 }
 
 .post-detail img {
-    max-width: 100% !important;
+    width: 100% !important;
     height: auto !important;
 }
 
@@ -57,4 +57,14 @@ footer {
     background-color: #212529;
     padding: 5px;
     width: 100%;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance:none) {
+      .post-detail img {
+          /* Safari-specific styles */
+          width: 100%;
+          height: auto;
+      }
+  }
 }
