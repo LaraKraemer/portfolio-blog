@@ -15,9 +15,9 @@
                     {{ post.published_date }}
                 </time>
             {% endif %}
-            <h2 class="fs-7 fw-bolder mt-4">{{ post.title }}</h2>
-            <p class="fw-lighter">{{ post.content|safe }}</p>
-            <a href="{% url 'post_list' %}" role="button" class="btn btn-outline-secondary btn-sm m-2">Return️</a>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content|safe }}</p>
+            <a href="{% url 'post_list' %}" role="button" class="btn btn-outline-dark btn-sm m-2">Return️</a>
         </div>
     </div>
 {% endblock %}

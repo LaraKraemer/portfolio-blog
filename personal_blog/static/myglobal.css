@@ -1,10 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chango&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&family=Sixtyfour+Convergence&display=swap');
+
+/* Set up general font styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Default font for the body */
+}
+
+/* Applying specific fonts to specific elements */
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 300px;
+}
+
+h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Regular text */
+}
+
 a {
-    color: #000000;
+    color: #0f0f0f;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif; /* Regular text */
 }
 
 a:hover {
-    color: #00A0C6;
+    color: #090a0a;
     text-decoration: none;
     cursor: pointer;
 }
@@ -26,15 +48,27 @@ body, html {
 }
 
 .card {
-    margin: 15px;
-    flex: 1 1 calc(33.333% - 30px); /* Adjusts the width and spacing of the cards */
-    box-sizing: border-box;
+    margin: 15px auto; /* Space around the card and center it */
+    height: 120px; /* Fixed height */
+    width: 90%; /* Use a percentage width to allow flexibility */
+    max-width: 600px; /* Optional: maximum width for larger screens */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    background-color: #fff; /* Background color */
+    border: 1px solid #070707; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.card-body {
+    padding: 15px; /* Padding inside the card */
 }
 
 .blog-posts{
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
 }
+
 
 .post-detail {
     padding-top: 50px;
@@ -52,11 +86,73 @@ body, html {
    font-style: italic;
 }
 
-footer {
-    justify-content: center;
-    background-color: #212529;
+.navbar {
+    background-color: #2323ff;
+}
+
+.navbar a {
+    color: white; /* This targets the <a> tags inside .navbar */
+    font-size: 15px;
+}
+
+.footer {
+    padding: 10px 0;
+    text-align: center;          
+    background-color: #2323ff;
+    color: white;
+}
+.footer a {
+    color: #fcfcfbd5;
+    font-size: 20px;
     padding: 5px;
-    width: 100%;
+    transition: all .5s ease;
+    margin: 0 10px; 
+}
+
+.footer p {
+    margin: 0; /* Reset margin to avoid any default spacing */
+    margin-bottom: 1px; /* Adjust this value to control space */
+    font-size: 15px;
+}
+
+.footer a:first-child {
+    border-left: 4px solid #698f44;
+  }
+
+.footer a:hover {
+color: rgba(206, 196, 196, 0.77);
+}
+
+img {
+    max-width: 50%; /* Ensures the image never exceeds its column width */
+    margin-top: -40px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 300px;
+    }
+}
+
+/* Responsiveness*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: 200px;
+    }
+    img {
+        max-width: 70%; /* Reduce image size on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 120px;
+        text-align: center;
+    }
+    img {
+        max-width: 50%; /* Further reduce image size on extra-small screens */
+    }
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
