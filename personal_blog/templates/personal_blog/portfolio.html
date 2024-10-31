@@ -3,27 +3,28 @@
 
 {% block content %}
 <div class="py-5">
-    <div class="slides">
-        <div class="row justify-content-center text-black text-left">
-            <div class="col-10">
-                <p class="fs-7 fw-bolder">Hi 👋 my name is</p>
-                <h1 class="display-1">Lara Krämer</h1>
-                <h1 class="fw-lighter">I am learning to cook up magic for the web.</h1>
-                    <p class="text-muted fw-light font-monospace">
-                    A passionate programmer and baker with a background in people management and recruitment.
-                    Currently refining my skills in web development, object-oriented programming, databases,
-                    algorithms, and API integration through Harvard's CS50 Web Programming Course in Python and
-                    JavaScript. I also enjoy working with microcontrollers and recently completed 42 Berlin Piscine,
-                    a month-long selection process, gaining a solid foundation in C programming.
-                    </p>
+    <div class="slides container">
+        <div class="row justify-content-center text-black text-center">
+            <div class="col-md-6 text-center mt-5">
+                <h1>HELLO!</h1>
+            </div>
+            <div class="col-md-6 justify-content-center">
+                <img src="{% static 'lara_icon.png' %}" alt="Lara" class="img-fluid">
+            </div>
             <div>
-                    <a href="https://github.com/LaraKraemer" role="button" class="btn btn-outline-secondary btn-sm mr-1">Github repos 👀</a>
-                    <a href="{% url 'post_list' %}" role="button" class="btn btn-outline-secondary btn-sm m-2">Tech tales ✍️</a>
+                <h2>I'm Lara Krämer. I am learning to cook up magic for the web.</h2>
+                <p style="max-width: 700px; margin: 0 auto;">
+                A passionate programmer, cook and baker with a background in people management and recruitment.
+                Currently studying web development, object-oriented programming, databases,
+                algorithms, and API integration at 42 Berlin and through the Harvard's CS50 Web Programming Course.
+                </p>
+                <a href="https://github.com/LaraKraemer" role="button" class="btn btn-outline-dark btn-sm mr-1">Github Projects</a>
+                <a href="{% url 'post_list' %}" role="button" class="btn btn-outline-dark btn-sm m-2">Tech Stories</a>
             </div>
         </div>
     </div>
 </div>
-</div>
+
 {% endblock %}
 
 
