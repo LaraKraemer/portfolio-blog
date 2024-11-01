@@ -1,7 +1,9 @@
-# A simplistic landing page and blog
+# A modern, simplistic Landing Page and Blog Application
 
-Adapted from the [Django Girls Tutorial](https://tutorial.djangogirls.org/en/). 
-After following the instructions again, I continued by adding a landing page.
+## Introduction
+**"Django Landing page and Blog application"** is a developer blog and portfolio website built using **Django**, **CSS** and **Bootstrap** . The project demonstrates a clean, modern design that is responsive. It includes an admin interface for managing the content and is easy to customize and deploy to a production environment. Credits to the great blog tutorial of the [Django Girls](https://tutorial.djangogirls.org/en/). 
+
+<img width="800" alt="landing-page" src="https://github.com/user-attachments/assets/7a143971-b474-4fbe-a530-9fe38fe7bd40">
 
 
 ## Installation 
@@ -12,7 +14,3 @@ After following the instructions again, I continued by adding a landing page.
 3. Create a requirements file and add: `Django`
 4. Install requirements: `pip install -r requirements.txt`
 5. Run app: `python manage.py runserver`
-
-   
-
-
