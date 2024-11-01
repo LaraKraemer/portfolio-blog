@@ -16,21 +16,10 @@ h2 {
 }
 
 p {
-    font-family: 'Roboto', sans-serif; /* Regular text */
+    font-family: 'Roboto', sans-serif; 
 }
 
-a {
-    color: #0f0f0f;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif; /* Regular text */
-}
-
-a:hover {
-    color: #090a0a;
-    text-decoration: none;
-    cursor: pointer;
-}
-
+/* General page structure */
 body, html {
     display: flex;
     flex-direction: column;
@@ -47,9 +36,23 @@ body, html {
     margin-left: auto;
 }
 
+/* Button & Link Styling */
+a {
+    color: #0f0f0f;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; /* Regular text */
+}
+
+a:hover {
+    color: #090a0a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Blog-list view styling */
 .card {
     margin: 15px auto; /* Space around the card and center it */
-    height: 120px; /* Fixed height */
+    height: auto; /* Fixed height */
     width: 90%; /* Use a percentage width to allow flexibility */
     max-width: 600px; /* Optional: maximum width for larger screens */
     box-sizing: border-box; /* Include padding and border in width calculations */
@@ -69,7 +72,7 @@ body, html {
     display: block;
 }
 
-
+/* Post styling */
 .post-detail {
     padding-top: 50px;
     padding-right: 15px;
@@ -77,15 +80,24 @@ body, html {
 }
 
 .post-detail img {
-    width: 100% !important;
-    height: auto !important;
+    max-width: 100%;   /* Allows images to scale with the container */
+    width: auto;
+    height: auto;
 }
 
 .date {
    color: #0e1921;
    font-style: italic;
+   padding-bottom: 16px;
 }
 
+.portfolio-pic img {
+    max-width: 50%; /* Ensures the image never exceeds its column width */
+    margin-top: 40px;
+    margin-left: auto;
+}
+
+/* Navbar Styling */
 .navbar {
     background-color: #2323ff;
 }
@@ -95,6 +107,8 @@ body, html {
     font-size: 15px;
 }
 
+
+/* Footer Styling */
 .footer {
     padding: 10px 0;
     text-align: center;          
@@ -123,35 +137,40 @@ body, html {
 color: rgba(206, 196, 196, 0.77);
 }
 
-img {
-    max-width: 50%; /* Ensures the image never exceeds its column width */
-    margin-top: -40px;
-    padding-bottom: 30px;
-}
+
+/* Responsiveness Styling*/
 
 @media (max-width: 1200px) {
-    h1 {
+    .portfolio-header h1 {
         font-size: 300px;
+    }
+    .portfolio-pic img {
+        max-width: 50%; /* Reduce image size on smaller screens */
+        margin-left: auto;
     }
 }
 
-/* Responsiveness*/
 @media (max-width: 768px) {
-    h1 {
+    .portfolio-header h1 {
         font-size: 200px;
+        text-align: center;
     }
-    img {
-        max-width: 70%; /* Reduce image size on smaller screens */
+    .portfolio-pic img {
+        max-width: 50%; /* Reduce image size on smaller screens */
+        margin-top: -10px;
+        margin-left: auto;
     }
 }
 
 @media (max-width: 576px) {
-    h1 {
+    .portfolio-header h1 {
         font-size: 120px;
         text-align: center;
     }
-    img {
+    .portfolio-pic img {
         max-width: 50%; /* Further reduce image size on extra-small screens */
+        margin-bottom: 20px;
+        margin-top: -10px;
     }
 }
 
