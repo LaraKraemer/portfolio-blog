@@ -4,13 +4,13 @@
 {% block content %}
 <div class="py-5">
     <div class="slides container">
-        <div class="row justify-content-center text-black text-center custom-responsive">
-            <div class="col-md-6 text-center mt-5">
+        <div class="row justify-content-center text-black text-center custom-responsive flex-wrap">
+            <div class="col-sm-6 text-center mt-5">
                 <div class="portfolio-header">
                     <h1>HELLO!</h1>
                 </div>
             </div>
-            <div class="col-md-6 justify-content-center">
+            <div class="col-sm-6 justify-content-center">
                 <div class="portfolio-pic">
                     <img src="{% static 'lara_icon.png' %}" alt="Lara" class="img-fluid">
                 </div>
@@ -18,9 +18,9 @@
             <div>
                 <h2>I'm Lara Krämer. I am learning to cook up magic for the web.</h2>
                 <p style="max-width: 700px; margin: 0 auto;">
-                A passionate programmer, cook and baker with a background in people management and recruitment.
-                Currently studying web development, object-oriented programming, databases,
-                algorithms, and API integration at 42 Berlin and through the Harvard's CS50 Web Programming Course.
+                A passionate programmer, cook and baker with a background in people management and tech recruitment.
+                Currently studying systems programming, data and algorithm structures, object-oriented programming, 
+				and API integration at 42 Berlin and through the Harvard's CS50 Web Programming Course.
                 </p>
                 <a href="https://github.com/LaraKraemer" role="button" class="btn btn-outline-dark btn-sm mr-1">Github Projects</a>
                 <a href="{% url 'post_list' %}" role="button" class="btn btn-outline-dark btn-sm m-2">Tech Stories</a>
