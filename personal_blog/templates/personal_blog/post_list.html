@@ -10,8 +10,8 @@
                                 <time class="date">
                                     {{ post.published_date }}
                                 </time>
-                                <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h4>
-                                <a href="{% url 'post_detail' pk=post.pk %}" class=" btn btn-outline-dark btn-sm">Read More</a>
+                                <h4><a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a></h4>
+                                <a href="{% url 'post_detail' slug=post.slug %}" class=" btn btn-outline-dark btn-sm">Read More</a>
                          </div>
                     </div>
                 {% endfor %}
