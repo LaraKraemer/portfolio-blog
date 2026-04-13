@@ -58,10 +58,10 @@ a:hover {
     box-sizing: border-box; /* Include padding and border in width calculations */
     display: flex;
     flex-direction: column; /* Stack child elements vertically */
-    background-color: #fff; /* Background color */
-    border: 1px solid #070707; /* Border style */
+    border: white; /* Border style */
     border-radius: 5px; /* Rounded corners */
     overflow: hidden; /* Ensures content doesn't overflow */
+	background: linear-gradient(to bottom, #F2EFFB, #E0F5F5);
 }
 
 .card-body {
@@ -74,7 +74,7 @@ a:hover {
 
 /* Post styling */
 .post-detail {
-    padding-top: 50px;
+    padding-top: 10px;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -99,12 +99,13 @@ a:hover {
 
 /* Navbar Styling */
 .navbar {
-    background-color: #2323ff;
+    background-color: white;
 }
 
 .navbar a {
-    color: white; /* This targets the <a> tags inside .navbar */
+    color: black;
     font-size: 15px;
+	font-weight: bold;
 }
 
 
@@ -112,11 +113,11 @@ a:hover {
 .footer {
     padding: 10px 0;
     text-align: center;          
-    background-color: #2323ff;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .footer a {
-    color: #fcfcfbd5;
+    color: black;
     font-size: 20px;
     padding: 5px;
     transition: all .5s ease;
@@ -143,10 +144,17 @@ color: rgba(206, 196, 196, 0.77);
 }
 
 .portfolio-pic img {
-	max-width: calc(20vw); /* Further reduce image size on extra-small screens */
+	max-width: calc(20vw);
 	margin-bottom: 20px;
 }
 
+.custom-gradient-box {
+	background: linear-gradient(to bottom, #F2EFFB, #E0F5F5);
+	border-radius: 40px; 
+	min-height: 374px; 
+	margin-top: 20px; 
+	padding: 16px;
+}
 
 /* Responsiveness Styling*/
 @media (max-width: 575px) {
@@ -179,6 +187,10 @@ color: rgba(206, 196, 196, 0.77);
 	.portfolio-pic img {
 		max-width: 180px;
 	}
+	.custom-gradient-box {
+		min-height: 432px;
+		margin-top: 4px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -198,6 +210,9 @@ color: rgba(206, 196, 196, 0.77);
 	
 	.portfolio-pic img {
 		max-width: 280px;
+	}
+	.custom-gradient-box {
+		min-height: 597px;
 	}
 }
 
@@ -219,4 +234,16 @@ color: rgba(206, 196, 196, 0.77);
           height: auto;
       }
   }
+}
+
+.navbar-gradient-box {
+    background: linear-gradient(to bottom, #F2EFFB, #E0F5F5);
+    border-radius: 40px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+	display: flex;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
 }
